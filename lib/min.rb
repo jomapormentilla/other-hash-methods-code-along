@@ -10,4 +10,14 @@ require 'pry'
 
 def get_the_min(groceries)
   #code your solution here!
+  arr = []
+  groceries.each do |key, val|
+    val.each do |data|
+      arr << data
+    end
+  end
+  
+  min_arr = arr.sort
+  result = min_arr.shift
+  result
 end
